@@ -40,7 +40,8 @@
 	//"postAttachCommand": "bash .devcontainer/setup-terminal.sh",
 	// Update port forwarding configuration
 	"forwardPorts": [
-		10000
+		10000,
+		3000
 	],
 	"remoteUser": "vscode",
 	"runArgs": [
@@ -49,6 +50,10 @@
 	"portsAttributes": {
 		"10000": {
 			"label": "Chainlit UI",
+			"onAutoForward": "openBrowser"
+		},
+		"3000": {
+			"label": "Daymark Study Tracker",
 			"onAutoForward": "openBrowser"
 		}
 	}
